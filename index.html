@@ -224,112 +224,121 @@ const myWork = createWebsite(
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projets" class="py-16 sm:py-20 bg-gray-100 dark:bg-dark-800">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-heading mb-3 sm:mb-4">
-                    Mes <span class="text-primary-600 dark:text-primary-400">Réalisations</span>
-                </h2>
-                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
-                    Découvrez une sélection de mes projets récents. Chaque site est conçu avec une attention particulière aux détails et aux performances.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project 1 -->
-                <div class="project-card group">
-                    <div class="project-image overflow-hidden rounded-t-lg">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
-                             alt="Projet e-commerce" 
-                             class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="project-content bg-white dark:bg-dark-700 p-4 sm:p-6 rounded-b-lg border border-gray-200 dark:border-dark-600">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg sm:text-xl font-bold font-heading">Gestion des utilisateurs</h3>
-                            <span class="text-xs px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full">Users CRUD</span>
-                        </div>
-                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
-                            Systeme de gestion des utilsateurs(Création, Affichage, Modification, Suppression) avec Reactjs.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Mysql</span>
-                            <span class="tech-tag">TailwindCSS</span>
-                        </div>
-                        <div class="flex space-x-3 sm:space-x-4">
-                            <a href="https://github.com/Carelle9000/Mon-projet-js/tree/main/mon-projet" class="project-link">
-                                <i class="fab fa-github mr-1 sm:mr-2"></i> Code source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card group">
-                    <div class="project-image overflow-hidden rounded-t-lg">
-                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" 
-                             alt="Projet application web" 
-                             class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="project-content bg-white dark:bg-dark-700 p-4 sm:p-6 rounded-b-lg border border-gray-200 dark:border-dark-600">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg sm:text-xl font-bold font-heading">Generateur de cv</h3>
-                            <span class="text-xs px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full">CV</span>
-                        </div>
-                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
-                            Site web permettant de generer des cv en temps reel, de pouvoir l'imprimer et le telecharger.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">TailwindCSS</span>
-                            <span class="tech-tag">Bootstrap</span>
-                            <span class="tech-tag">Mysql</span>
-                        </div>
-                        <div class="flex space-x-3 sm:space-x-4">
-                            <a href="https://github.com/Carelle9000/Geneateur-de-CV-dynamique" class="project-link">
-                                <i class="fab fa-github mr-1 sm:mr-2"></i> Code source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card group">
-                    <div class="project-image overflow-hidden rounded-t-lg">
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" 
-                             alt="Projet auth&CRUD" 
-                             class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="project-content bg-white dark:bg-dark-700 p-4 sm:p-6 rounded-b-lg border border-gray-200 dark:border-dark-600">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg sm:text-xl font-bold font-heading">Authentification & Tasks CRUD</h3>
-                            <span class="text-xs px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full">TasksCRUD</span>
-                        </div>
-                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
-                            Conception d'un Systeme d'Authentification et gestion des taches des utilisateurs.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">Reactjs</span>
-                        </div>
-                        <div class="flex space-x-3 sm:space-x-4">
-                            <a href="https://github.com/Carelle9000/FullStack2" class="project-link">
-                                <i class="fab fa-github mr-1 sm:mr-2"></i> Code source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-10 sm:mt-12">
-                <a href="https://github.com/Carelle9000" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 transition-colors">
-                    Voir tous mes projets <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+<!-- Projects Section -->
+<section id="projets" class="py-16 sm:py-20 bg-gray-100 dark:bg-dark-800">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-heading mb-3 sm:mb-4">
+        Mes <span class="text-primary-600 dark:text-primary-400">Réalisations</span>
+      </h2>
+      <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+        Découvrez une sélection de mes projets récents. Chaque site est conçu avec une attention particulière aux détails et aux performances.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Projet 1 : Women Grow Up v1 -->
+      <div class="project-card group">
+        <div class="project-image overflow-hidden rounded-t-lg">
+          <img 
+            src="assets/images/women grow up.png" 
+            alt="Women Grow Up v1"
+            class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
         </div>
-    </section>
+        <div class="project-content bg-white dark:bg-dark-700 p-4 sm:p-6 rounded-b-lg border border-gray-200 dark:border-dark-600">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg sm:text-xl font-bold font-heading">Women Grow Up v1</h3>
+            <span class="text-xs px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full">Plateforme sociale</span>
+          </div>
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
+            Application web visant à promouvoir l’autonomisation des femmes à travers l’apprentissage, le mentorat et la collaboration communautaire.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">React</span>
+          </div>
+          <div class="flex space-x-3 sm:space-x-4">
+            <a href="https://github.com/Carelle9000/Women-Grow-Upv1" target="_blank" class="project-link">
+              <i class="fab fa-github mr-1 sm:mr-2"></i> Code source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 : BankAccount -->
+      <div class="project-card group">
+        <div class="project-image overflow-hidden rounded-t-lg">
+          <img 
+            src="assets/images/BankAccount.jpg" 
+            alt="BankAccount"
+            class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="project-content bg-white dark:bg-dark-700 p-4 sm:p-6 rounded-b-lg border border-gray-200 dark:border-dark-600">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg sm:text-xl font-bold font-heading">BankAccount</h3>
+            <span class="text-xs px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full">Application bancaire</span>
+          </div>
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
+            Simulation complète d’un système de gestion de comptes bancaires : dépôts, retraits, transferts et consultation d’historique.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Thymeleaf</span>
+          </div>
+          <div class="flex space-x-3 sm:space-x-4">
+            <a href="https://github.com/Carelle9000/BankAccount" target="_blank" class="project-link">
+              <i class="fab fa-github mr-1 sm:mr-2"></i> Code source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 : Exo Gadget Personnalisé -->
+      <div class="project-card group">
+        <div class="project-image overflow-hidden rounded-t-lg">
+          <img 
+            src="assets/images/exo gadget.jpeg" 
+            alt="Exo Gadget Personnalisé"
+            class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="project-content bg-white dark:bg-dark-700 p-4 sm:p-6 rounded-b-lg border border-gray-200 dark:border-dark-600">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg sm:text-xl font-bold font-heading">Exo Gadget Personnalisé</h3>
+            <span class="text-xs px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full">Intranet</span>
+          </div>
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
+            Développement d’un gadget personnalisé intégré à ExoPlatform pour la gestion dynamique d’informations dans un environnement collaboratif.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">ExoPlatform</span>
+            <span class="tech-tag">Portlet</span>
+            <span class="tech-tag">UI/UX</span>
+          </div>
+          <div class="flex space-x-3 sm:space-x-4">
+            <a href="https://github.com/Carelle9000/exo-gadget-personnalise" target="_blank" class="project-link">
+              <i class="fab fa-github mr-1 sm:mr-2"></i> Code source
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10 sm:mt-12">
+      <a href="https://github.com/Carelle9000" target="_blank" 
+         class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 transition-colors">
+        Voir tous mes projets <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
     
     <!-- Skills Section -->
     <section id="competences" class="py-16 sm:py-20">
@@ -376,7 +385,62 @@ const myWork = createWebsite(
                         <div class="bg-yellow-500 h-full rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
+
+                <!-- Skill 7: TypeScript -->
+                <div class="skill-card">
+                    <div class="skill-icon bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">
+                        <i class="fas fa-code text-3xl sm:text-4xl"></i>
+                    </div>
+                    <h3 class="skill-name">TypeScript</h3>
+                    <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-blue-600 h-full rounded-full" style="width: 30%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 10: Java -->
+                <div class="skill-card">
+                    <div class="skill-icon bg-yellow-700 dark:bg-red-900/30 text-yellow-600 dark:text-yellow-800">
+                        <i class="fab fa-html5 text-3xl sm:text-4xl"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-yellow-700 h-full rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
                 
+                <!-- Skill 6 -->
+                <div class="skill-card">
+                    <div class="skill-icon bg-gray-100 dark:bg-gray-900/30 text-gray-600 dark:text-gray-400">
+                        <i class="fas fa-database text-3xl sm:text-4xl"></i>
+                    </div>
+                    <h3 class="skill-name">Mysql</h3>
+                    <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-gray-600 h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 11: Spring Boot -->
+                <div class="skill-card">
+                    <div class="skill-icon bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">
+                        <i class="fas fa-leaf text-3xl sm:text-4xl"></i>
+                    </div>
+                    <h3 class="skill-name">Spring Boot</h3>
+                    <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-green-600 h-full rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                
+                <!-- Skill 9: PostgreSQL -->
+                <div class="skill-card">
+                    <div class="skill-icon bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">
+                        <i class="fas fa-database text-3xl sm:text-4xl"></i>
+                    </div>
+                    <h3 class="skill-name">PostgreSQL</h3>
+                    <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-indigo-600 h-full rounded-full" style="width: 50%"></div>
+                    </div>
+                </div>
+
                 <!-- Skill 4 -->
                 <div class="skill-card">
                     <div class="skill-icon bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
@@ -398,17 +462,29 @@ const myWork = createWebsite(
                         <div class="bg-red-600 h-full rounded-full" style="width: 75%"></div>
                     </div>
                 </div>
-                
-                <!-- Skill 6 -->
+
+                <!-- Skill 8: NestJS -->
                 <div class="skill-card">
-                    <div class="skill-icon bg-gray-100 dark:bg-gray-900/30 text-gray-600 dark:text-gray-400">
-                        <i class="fas fa-database text-3xl sm:text-4xl"></i>
+                    <div class="skill-icon bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">
+                        <i class="fas fa-server text-3xl sm:text-4xl"></i>
                     </div>
-                    <h3 class="skill-name">Mysql</h3>
+                    <h3 class="skill-name">NestJS</h3>
                     <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
-                        <div class="bg-gray-600 h-full rounded-full" style="width: 70%"></div>
+                        <div class="bg-red-600 h-full rounded-full" style="width: 50%"></div>
                     </div>
                 </div>
+
+                <!-- Skill 11: Spring Boot -->
+                <div class="skill-card">
+                    <div class="skill-icon bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">
+                        <i class="fas fa-leaf text-3xl sm:text-4xl"></i>
+                    </div>
+                    <h3 class="skill-name">Spring Boot</h3>
+                    <div class="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-green-600 h-full rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+
             </div>
             
             <div class="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
@@ -486,7 +562,7 @@ const myWork = createWebsite(
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-phone-alt mt-1 mr-3 sm:mr-4"></i>
-                                <span>+237 694 06 54 60</span>
+                                <span>+237 696 90 97 33</span>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-map-marker-alt mt-1 mr-3 sm:mr-4"></i>
@@ -511,7 +587,13 @@ const myWork = createWebsite(
                     </div>
                     
                     <div class="md:w-1/2 p-6 sm:p-8 md:p-10 lg:p-12">
-                        <form id="contact-form" class="space-y-4 sm:space-y-6">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-4 sm:space-y-6">
+                            <!-- Remplacez par votre clé d'accès Web3Forms -->
+                            <input type="hidden" name="access_key" value="13bd5d8b-5152-4ae7-b71a-49cb3bb393d8">
+                            
+                            <!-- Sujet de l'e-mail que vous recevrez -->
+                            <input type="hidden" name="subject" value="Nouveau message depuis votre Portfolio">
+
                             <div>
                                 <label for="name" class="block text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 mb-1">Nom complet</label>
                                 <input type="text" id="name" name="name" required 
@@ -536,9 +618,13 @@ const myWork = createWebsite(
                                           class="form-input w-full px-3 sm:px-4 py-2 sm:py-2.5"></textarea>
                             </div>
                             
-                            <button type="submit" class="w-full btn-primary py-2 sm:py-3">
-                                Envoyer le message <i class="fas fa-paper-plane ml-2"></i>
+                            <div id="form-result" class="text-sm"></div>
+
+                            <button type="submit" id="contact-submit-btn" class="w-full btn-primary py-2 sm:py-3 flex items-center justify-center">
+                                <span class="btn-text">Envoyer le message</span>
+                                <i class="fas fa-paper-plane ml-2"></i>
                             </button>
+
                         </form>
                     </div>
                 </div>

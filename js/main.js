@@ -1,5 +1,3 @@
-/*import './src/style.css';*/
-
 document.addEventListener('DOMContentLoaded', function() {
     // ==================== DARK MODE TOGGLE ====================
         const themeToggleBtn = document.getElementById('theme-toggle');
@@ -134,12 +132,49 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==================== CONTACT FORM ====================
     const contactForm = document.getElementById('contact-form');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message! Je vous répondrai dès que possible.');
-            contactForm.reset();
-        });
+    if (contactForm) { // La vérification est bonne, on la garde
+        const formResult = document.getElementById('form-result');
+        const submitButton = document.getElementById('contact-submit-btn');
+        const submitButtonText = submitButton.querySelector('.btn-text');
+
+        contactForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          
+          const formData = new FormData(contactForm);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+
+          formResult.innerHTML = "Envoi en cours...";
+          formResult.className = 'text-gray-500 dark:text-gray-400';
+          submitButton.disabled = true;
+          submitButtonText.textContent = 'Envoi...';
+
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            });
+            const result = await response.json();
+            if (result.success) {
+                formResult.innerHTML = "Message envoyé avec succès ! Merci.";
+                formResult.className = 'text-green-500';
+                contactForm.reset();
+            } else {
+                formResult.innerHTML = "Erreur: " + result.message;
+                formResult.className = 'text-red-500';
+            }
+          } catch (error) {
+            formResult.innerHTML = "Une erreur est survenue. Veuillez réessayer.";
+            formResult.className = 'text-red-500';
+          } finally {
+            submitButton.disabled = false;
+            submitButtonText.textContent = 'Envoyer le message';
+          }
+        });    
     }
 
     // ==================== PROJECT CARD HOVER EFFECT ====================
